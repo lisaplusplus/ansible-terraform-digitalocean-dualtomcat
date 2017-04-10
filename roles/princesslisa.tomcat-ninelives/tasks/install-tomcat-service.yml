@@ -1,0 +1,8 @@
+---
+- name: Copy tomcat 9 systemd service file
+  copy:
+    src: tomcat.service
+    dest: /etc/systemd/system/tomcat.service
+    owner: root
+    group: root
+    mode: 0644

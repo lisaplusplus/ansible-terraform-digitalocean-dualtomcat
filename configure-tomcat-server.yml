@@ -1,0 +1,10 @@
+---
+- include: tasks/install-apt-https.yml
+
+- hosts: all
+  gather_facts: true
+  strategy: debug
+  vars_files:
+    - vars_common.yml
+  roles:
+    - princesslisa.tomcat-ninelives

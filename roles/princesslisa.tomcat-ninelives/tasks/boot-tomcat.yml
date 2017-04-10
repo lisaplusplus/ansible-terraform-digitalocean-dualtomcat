@@ -1,0 +1,2 @@
+- name: Boot tomcat
+  systemd: name=tomcat.service state=restarted enabled=yes daemon_reload=yes

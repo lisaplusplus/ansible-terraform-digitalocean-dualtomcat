@@ -1,0 +1,12 @@
+---
+mirror_site: http://archive.apache.org/dist
+tomcat_name: tomcat
+tomcat_major_version: 9
+tomcat_version: 9.0.0.M9
+tomcat_version_specific_name: "{{ tomcat_name }}-{{ tomcat_major_version }}"
+apache_tomcat_folder_name: "apache-{{ tomcat_name }}-{{ tomcat_version }}"
+apache_tomcat_archive_name: "{{ apache_tomcat_folder_name }}.tar.gz"
+apache_tomcat_checksum: 6a245b3259ea9fabbd097a0fe1619ce57cce1972
+
+apache_tomcat_targz_url: "{{ mirror_site }}/{{ tomcat_name }}/{{ tomcat_version_specific_name }}/v{{ tomcat_version }}/bin/{{ apache_tomcat_archive_name }}"
+

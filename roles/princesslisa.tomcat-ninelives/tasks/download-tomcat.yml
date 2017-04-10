@@ -1,0 +1,4 @@
+---
+- name: Download tomcat nine
+  get_url: url="{{ apache_tomcat_targz_url }}" dest="/opt/{{ apache_tomcat_archive_name }}" checksum="sha1:{{ apache_tomcat_checksum }}"
+

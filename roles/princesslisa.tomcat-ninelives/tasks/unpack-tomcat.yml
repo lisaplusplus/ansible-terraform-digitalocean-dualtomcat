@@ -1,0 +1,9 @@
+---
+- name: Unpack the tomcat archive
+  unarchive: src="/opt/{{ apache_tomcat_archive_name }}" dest=/opt/ remote_src=true
+
+- name: symlink tomcat to the apache_tomcat_folder_name
+  file: src="/opt/{{ apache_tomcat_folder_name }}" path=/usr/share/tomcat state=link force=yes
+
+- name: Change the ownership of the tomcat folder
+  file: path="/opt/{{ apache_tomcat_folder_name }}" owner=tomcat group=tomcat state=directory recurse=yes

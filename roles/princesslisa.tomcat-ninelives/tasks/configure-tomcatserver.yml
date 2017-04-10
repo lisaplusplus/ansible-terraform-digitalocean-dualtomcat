@@ -1,0 +1,5 @@
+---
+- name: Configure Tomcat server
+  template: src=server.xml dest=/usr/share/tomcat/conf
+  notify: restart tomcat
+

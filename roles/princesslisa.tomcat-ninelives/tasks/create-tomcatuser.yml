@@ -1,0 +1,9 @@
+---
+- name: Create tomcat group
+  group: name=tomcat
+
+- name: Create tomcat user
+  user: name=tomcat group=tomcat home=/usr/share/tomcat createhome=no system=yes shell=/bin/bash
+  become: true
+  become_method: sudo
+

@@ -1,0 +1,13 @@
+---
+- name: Install apt-transport-https
+  hosts: all
+  #roles:
+   # - novafloss.oracle-java
+
+  remote_user: root
+  tasks:
+    - name: Wait for port 22 to become available.
+      local_action: "wait_for port=22 host={{ inventory_hostname }}"
+
+    - name: apt-transport-https (required to add the apt sources)
+      apt: name=apt-transport-https state=present

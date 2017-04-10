@@ -1,0 +1,8 @@
+---
+- include: create-tomcatuser.yml
+- include: download-tomcat.yml
+- include: unpack-tomcat.yml
+- include: install-tomcat-service.yml
+- include: boot-tomcat.yml
+
+

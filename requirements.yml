@@ -1,0 +1,6 @@
+ - src: novafloss.oracle-java
+ - src: groover.tomcat
+ - src: https://github.com/silpion/ansible-lib
+   name: silpion.lib
+ - src: https://github.com/silpion/ansible-util
+   name: silpion.util
