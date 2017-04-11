@@ -1,8 +1,6 @@
 ---
 - name: Install apt-transport-https
   hosts: all
-  #roles:
-   # - novafloss.oracle-java
 
   remote_user: root
   tasks:
