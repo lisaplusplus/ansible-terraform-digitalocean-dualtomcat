@@ -5,7 +5,8 @@ An example project for creating two identical Tomcat servers on Digital Ocean. A
 
     i) Ansible
     ii) Terraform
-    iii) Digital Ocean account + API key
+    iii) terraform-inventory (Mac: brew install terraform-inventory)
+    iv) Digital Ocean account + API key
 
 # Setup
 
@@ -24,8 +25,8 @@ i) Spinning up the infrastructure
 
 ii) Provisioning the infrastructure
 
-    $ cd $project-folder
-    $ ansbile-playbook --i terraform/inventory configure-tomcat-server.yml
+    $ cd $project-folder/terraform
+    $ ansible-playbook --inventory-file=/usr/local/bin/terraform-inventory ../configure-tomcat-server.yml
 
     Results: Ansbile should install Tomcat and its dependencies on both
              servers.
