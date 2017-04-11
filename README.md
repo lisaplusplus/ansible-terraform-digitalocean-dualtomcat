@@ -26,7 +26,7 @@ i) Spinning up the infrastructure
 ii) Provisioning the infrastructure
 
     $ cd $project-folder/terraform
-    $ ansible-playbook --inventory-file=/path/to/terraform-inventory ../configure-tomcat-server.yml
+    $ ansible-playbook --inventory-file=/usr/local/bin/terraform-inventory ../configure-tomcat-server.yml
 
     Results: Ansbile should install Tomcat and its dependencies on both
              servers.
