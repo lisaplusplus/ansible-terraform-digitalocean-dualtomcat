@@ -3,6 +3,7 @@
 
 - hosts: all
   gather_facts: true
+  user: root
   strategy: debug
   vars_files:
     - vars_common.yml
